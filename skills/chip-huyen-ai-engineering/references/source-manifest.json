@@ -1,0 +1,583 @@
+{
+  "title": "AI Engineering: Building Applications with Foundation Models",
+  "author": "Chip Huyen",
+  "source_path": null,
+  "source_env": "CHIP_HUYEN_AI_ENGINEERING_SOURCE",
+  "sha256": "596e88fa0bff03f10f4175b96df6cb963ac74b2210a55075b2fac97cabb85da9",
+  "source_lines": 13924,
+  "source_format": "PaddleOCR-VL-1.6 Markdown",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Introduction to Building AI Applications with Foundation Models",
+      "start_line": 383,
+      "end_line": 1444,
+      "file": "chapters/ch01.md",
+      "sections": [
+        [
+          409,
+          "The Rise of AI Engineering"
+        ],
+        [
+          413,
+          "From Language Models to Large Language Models"
+        ],
+        [
+          417,
+          "Language models"
+        ],
+        [
+          429,
+          "I can't wait to build awesome AI applications"
+        ],
+        [
+          438,
+          "NOTE"
+        ],
+        [
+          452,
+          "Masked language model"
+        ],
+        [
+          458,
+          "Autoregressive language model"
+        ],
+        [
+          505,
+          "Self-supervision"
+        ],
+        [
+          582,
+          "From Large Language Models to Foundation Models"
+        ],
+        [
+          636,
+          "From Foundation Models to AI Engineering"
+        ],
+        [
+          642,
+          "Factor 1: General-purpose AI capabilities"
+        ],
+        [
+          660,
+          "Factor 2: Increased AI investments"
+        ]
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Understanding Foundation Models",
+      "start_line": 1445,
+      "end_line": 2680,
+      "file": "chapters/ch02.md",
+      "sections": [
+        [
+          1467,
+          "Training Data"
+        ],
+        [
+          1487,
+          "Multilingual Models"
+        ],
+        [
+          1546,
+          "Domain-Specific Models"
+        ],
+        [
+          1550,
+          "Distribution of domains in the C4 dataset"
+        ],
+        [
+          1575,
+          "Modeling"
+        ],
+        [
+          1579,
+          "Model Architecture"
+        ],
+        [
+          1583,
+          "Transformer architecture"
+        ],
+        [
+          1601,
+          "NOTE"
+        ],
+        [
+          1613,
+          "Decode"
+        ],
+        [
+          1619,
+          "Attention mechanism"
+        ],
+        [
+          1655,
+          "Transformer block"
+        ],
+        [
+          1659,
+          "Attention module"
+        ]
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Evaluation Methodology",
+      "start_line": 2681,
+      "end_line": 3678,
+      "file": "chapters/ch03.md",
+      "sections": [
+        [
+          2701,
+          "Challenges of Evaluating Foundation Models"
+        ],
+        [
+          2754,
+          "Understanding Language Modeling Metrics"
+        ],
+        [
+          2772,
+          "Entropy"
+        ],
+        [
+          2797,
+          "Cross Entropy"
+        ],
+        [
+          2819,
+          "Bits-per-Character and Bits-per-Byte"
+        ],
+        [
+          2841,
+          "Perplexity"
+        ],
+        [
+          2867,
+          "Perplexity Interpretation and Use Cases"
+        ],
+        [
+          2877,
+          "The bigger the vocabulary, the higher the perplexity"
+        ],
+        [
+          2900,
+          "WARNING"
+        ],
+        [
+          2910,
+          "HOW TO USE A LANGUAGE MODEL TO COMPUTE A TEXT'S PERPLEXITY"
+        ],
+        [
+          2920,
+          "Exact Evaluation"
+        ],
+        [
+          2928,
+          "Functional Correctness"
+        ]
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Evaluate AI Systems",
+      "start_line": 3679,
+      "end_line": 4943,
+      "file": "chapters/ch04.md",
+      "sections": [
+        [
+          3699,
+          "Evaluation Criteria"
+        ],
+        [
+          3707,
+          "EVALUATION-DRIVEN DEVELOPMENT"
+        ],
+        [
+          3741,
+          "Domain-Specific Capability"
+        ],
+        [
+          3785,
+          "Generation Capability"
+        ],
+        [
+          3811,
+          "Factual consistency"
+        ],
+        [
+          3817,
+          "Local factual consistency"
+        ],
+        [
+          3825,
+          "Global factual consistency"
+        ],
+        [
+          3875,
+          "Self-verification"
+        ],
+        [
+          3946,
+          "Accuracy on adversarial questions (TruthfulQA mc1)"
+        ],
+        [
+          3954,
+          "Safety"
+        ],
+        [
+          4004,
+          "Instruction-Following Capability"
+        ],
+        [
+          4018,
+          "WARNING"
+        ]
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Prompt Engineering",
+      "start_line": 4944,
+      "end_line": 5996,
+      "file": "chapters/ch05.md",
+      "sections": [
+        [
+          4958,
+          "Introduction to Prompting"
+        ],
+        [
+          4990,
+          "In-Context Learning: Zero-Shot and Few-Shot"
+        ],
+        [
+          5002,
+          "TERMINOLOGY AMBIGUITY: PROMPT VERSUS CONTEXT"
+        ],
+        [
+          5016,
+          "System Prompt and User Prompt"
+        ],
+        [
+          5024,
+          "User prompt:"
+        ],
+        [
+          5030,
+          "Answer:"
+        ],
+        [
+          5054,
+          "WARNING"
+        ],
+        [
+          5074,
+          "TIP"
+        ],
+        [
+          5092,
+          "Context Length and Context Efficiency"
+        ],
+        [
+          5151,
+          "Prompt Engineering Best Practices"
+        ],
+        [
+          5159,
+          "Write Clear and Explicit Instructions"
+        ],
+        [
+          5163,
+          "Explain, without ambiguity, what you want the model to do"
+        ]
+      ]
+    },
+    {
+      "number": 6,
+      "title": "RAG and Agents",
+      "start_line": 5997,
+      "end_line": 7308,
+      "file": "chapters/ch06.md",
+      "sections": [
+        [
+          6009,
+          "RAG"
+        ],
+        [
+          6037,
+          "NOTE"
+        ],
+        [
+          6041,
+          "RAG Architecture"
+        ],
+        [
+          6065,
+          "Retrieval Algorithms"
+        ],
+        [
+          6079,
+          "SPARSE VERSUS DENSE RETRIEVAL"
+        ],
+        [
+          6091,
+          "Term-based retrieval"
+        ],
+        [
+          6138,
+          "Embedding-based retrieval"
+        ],
+        [
+          6180,
+          "LSH (locality-sensitive hashing) (Indyk and Motwani, 1999)"
+        ],
+        [
+          6188,
+          "Product Quantization (Jégou et al., 2011)"
+        ],
+        [
+          6192,
+          "IVF (inverted file index) ( $ \\underline{\\text{Sivic and Zisserman, 2003}} $)"
+        ],
+        [
+          6196,
+          "Annoy (Approximate Nearest Neighbors Oh Yeah) (Bernhardsson, 2013)"
+        ],
+        [
+          6204,
+          "Comparing retrieval algorithms"
+        ]
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Finetuning",
+      "start_line": 7309,
+      "end_line": 8512,
+      "file": "chapters/ch07.md",
+      "sections": [
+        [
+          7329,
+          "Finetuning Overview"
+        ],
+        [
+          7345,
+          "NOTE"
+        ],
+        [
+          7401,
+          "When to Finetune"
+        ],
+        [
+          7417,
+          "Reasons to Finetune"
+        ],
+        [
+          7437,
+          "Reasons Not to Finetune"
+        ],
+        [
+          7465,
+          "FINETUNING DOMAIN-SPECIFIC TASKS"
+        ],
+        [
+          7496,
+          "Finetuning and RAG"
+        ],
+        [
+          7559,
+          "Memory Bottlenecks"
+        ],
+        [
+          7567,
+          "KEY TAKEAWAYS FOR UNDERSTANDING MEMORY BOTTLENECKS"
+        ],
+        [
+          7583,
+          "Backpropagation and Trainable Parameters"
+        ],
+        [
+          7613,
+          "Memory Math"
+        ],
+        [
+          7623,
+          "Memory needed for inference"
+        ]
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Dataset Engineering",
+      "start_line": 8513,
+      "end_line": 9430,
+      "file": "chapters/ch08.md",
+      "sections": [
+        [
+          8529,
+          "A DATA-CENTRIC VIEW OF AI"
+        ],
+        [
+          8553,
+          "Data Curation"
+        ],
+        [
+          8565,
+          "Chain-of-thought"
+        ],
+        [
+          8609,
+          "Data Quality"
+        ],
+        [
+          8621,
+          "Relevant"
+        ],
+        [
+          8625,
+          "Aligned with task requirements"
+        ],
+        [
+          8637,
+          "Correctly formatted"
+        ],
+        [
+          8651,
+          "Sufficiently unique"
+        ],
+        [
+          8655,
+          "Compliant"
+        ],
+        [
+          8661,
+          "Data Coverage"
+        ],
+        [
+          8700,
+          "Data Quantity"
+        ],
+        [
+          8708,
+          "NOTE"
+        ]
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Inference Optimization",
+      "start_line": 9431,
+      "end_line": 10359,
+      "file": "chapters/ch09.md",
+      "sections": [
+        [
+          9449,
+          "Understanding Inference Optimization"
+        ],
+        [
+          9455,
+          "Inference Overview"
+        ],
+        [
+          9467,
+          "Computational bottlenecks"
+        ],
+        [
+          9473,
+          "Compute-bound"
+        ],
+        [
+          9477,
+          "Memory bandwidth-bound"
+        ],
+        [
+          9481,
+          "TERMINOLOGY AMBIGUITY: MEMORY-BOUND VERSUS BANDWIDTH-BOUND"
+        ],
+        [
+          9505,
+          "Prefill"
+        ],
+        [
+          9509,
+          "Decode"
+        ],
+        [
+          9527,
+          "Online and batch inference APIs"
+        ],
+        [
+          9553,
+          "WARNING"
+        ],
+        [
+          9563,
+          "Inference Performance Metrics"
+        ],
+        [
+          9567,
+          "Latency, TTFT, and TPOT"
+        ]
+      ]
+    },
+    {
+      "number": 10,
+      "title": "AI Engineering Architecture and User Feedback",
+      "start_line": 10360,
+      "end_line": 11319,
+      "file": "chapters/ch10.md",
+      "sections": [
+        [
+          10368,
+          "AI Engineering Architecture"
+        ],
+        [
+          10400,
+          "Step 1. Enhance Context"
+        ],
+        [
+          10418,
+          "Step 2. Put in Guardrails"
+        ],
+        [
+          10422,
+          "Input guardrails"
+        ],
+        [
+          10452,
+          "Output guardrails"
+        ],
+        [
+          10470,
+          "• Security"
+        ],
+        [
+          10490,
+          "Guardrail implementation"
+        ],
+        [
+          10510,
+          "Step 3. Add Model Router and Gateway"
+        ],
+        [
+          10514,
+          "Router"
+        ],
+        [
+          10548,
+          "Gateway"
+        ],
+        [
+          10602,
+          "NOTE"
+        ],
+        [
+          10606,
+          "Step 4. Reduce Latency with Caches"
+        ]
+      ]
+    }
+  ],
+  "backmatter_start_line": 11320,
+  "generated": "2026-11-12"
+}
